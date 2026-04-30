@@ -1,0 +1,99 @@
+.wrapper {
+  width: 100%;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #7a5a2c;
+  margin-bottom: 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #7a5a2c;
+  font-weight: 600;
+}
+
+.field input,
+.field select {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s ease;
+  color: #3d3d3d;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-color: #c89c5d;
+  box-shadow: 0 0 0 2px rgba(200, 156, 93, 0.2);
+  color: #000;
+}
+
+.field span {
+  color: #d32f2f;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.buttonWrapper {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonWrapper button {
+  background: #c89c5d;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.buttonWrapper button:hover {
+  background: #b6864e;
+}
+
+.backBtn {
+  background: #999;
+}
+
+.backBtn:hover {
+  background: #777;
+}
+
+.successBox {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.successBox h2 {
+  color: #7a5a2c;
+  margin-bottom: 10px;
+}
+
+.successBox p {
+  color: #555;
+}
+.cardType {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #555;
+}

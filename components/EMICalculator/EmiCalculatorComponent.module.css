@@ -1,0 +1,136 @@
+.wrapper {
+  padding: 20px 20px;
+  background: #f9f7f2;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  margin-bottom: 30px;
+  color: #7a5a2c;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.field {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: black;
+}
+
+.field input[type="number"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.field input[type="range"] {
+  accent-color: #c6a14a;
+  cursor: pointer;
+}
+
+.emiBox {
+  background: #f4efe4;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.emiBox span {
+  color: #000;
+ 
+}
+
+.emiBox h1 {
+  color: #c6a14a;
+  font-size: 36px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.totalBox {
+  background: #f4efe4;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: black;
+}
+
+.progressBar {
+  display: flex;
+  height: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.principal {
+  background: #c6a14a;
+}
+
+.interest {
+  background: #a67c00;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #000;
+}
+
+.principalDot,
+.interestDot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.principalDot {
+  background: #c6a14a;
+}
+
+.interestDot {
+  background: #a67c00;
+}
+
+.goldText {
+  color: #a67c00;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+.select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}

@@ -1,0 +1,28 @@
+.section {
+  background: #f8f5ef;
+  padding: 40px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* Make sure nested components don't double background */
+.left,
+.right {
+  width: 100%;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}

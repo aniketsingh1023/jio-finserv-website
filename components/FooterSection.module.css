@@ -1,0 +1,229 @@
+.downloadAppBtn {
+  background: linear-gradient(90deg, #d4a65a 0%, #b8842f 100%);
+  color: #0b1a33;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(212, 166, 90, 0.15);
+  transition: background 0.3s, color 0.3s;
+}
+
+.downloadAppBtn:hover {
+  background: linear-gradient(90deg, #f5d07a 0%, #d4a65a 100%);
+  color: #0b1a33;
+}
+.footer {
+  position: relative;
+  background: linear-gradient(135deg, #0b1a33, #0e2245);
+  color: #cbd5e1;
+  padding: 100px 40px 40px;
+  overflow: hidden;
+  isolation: isolate; /* prevents stacking bugs */
+}
+
+/* ===== Background Shimmer (SAFE) ===== */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(212, 166, 90, 0.06) 40%,
+    transparent 80%
+  );
+  animation: shimmerMove 8s linear infinite;
+  pointer-events: none; /* CRITICAL */
+  z-index: 0;
+}
+
+@keyframes shimmerMove {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Container ABOVE shimmer */
+.container {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== Premium Glass Card ===== */
+.glass {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border-radius: 14px;
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.4s ease;
+}
+
+/* Gold animated border */
+.glass::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 14px;
+  padding: 1px;
+  background: linear-gradient(120deg, transparent, #d4a65a, transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none; /* IMPORTANT FIX */
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.glass:hover::after {
+  opacity: 1;
+}
+
+.glass:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== Logo ===== */
+.logo {
+  width: 60px;
+  height: 60px;
+  background: white;
+  color: #0b1a33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.heading {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+/* ===== LINKS (Safe + Clickable) ===== */
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 12px;
+}
+
+.links a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; /* pointer guaranteed */
+  transition: color 0.3s ease;
+  z-index: 5; /* ensures always clickable */
+}
+
+/* Luxury shimmer underline */
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0%;
+  background: linear-gradient(
+    90deg,
+    #b8842f,
+    #d4a65a,
+    #f5d07a,
+    #d4a65a,
+    #b8842f
+  );
+  background-size: 200% auto;
+  transition: width 0.4s ease;
+}
+
+.links a:hover {
+  color: #f5d07a;
+}
+
+.links a:hover::after {
+  width: 100%;
+  animation: goldShimmer 1.2s linear infinite;
+}
+
+@keyframes goldShimmer {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* ===== Bottom Section ===== */
+.divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 60px auto 25px;
+  max-width: 1200px;
+}
+
+.bottomRow {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottomLinks a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.bottomLinks a:hover {
+  color: #f5d07a;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomRow {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

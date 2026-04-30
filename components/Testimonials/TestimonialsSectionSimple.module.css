@@ -1,0 +1,81 @@
+.section {
+  background: #f8f5ef; /* Same as WhyTrust */
+  padding: 30px 20px;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.heading {
+  font-size: 34px;
+  font-weight: 700;
+  color: #7a5a2c; /* Same heading color */
+  margin-bottom: 10px;
+}
+.subheading {
+  font-size: 16px;
+  color: #4b4a4a;
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  line-height: 1.6;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+} /* Card */
+.card {
+  background: #fdf5dd; /* Same as WhyTrust cards */
+  border: 0 solid #c89c5d; /* Accent gold */
+  border-radius: 22px;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+.card:hover {
+  background: white;
+  box-shadow: 0 20px 40px rgba(200, 156, 93, 0.2);
+  transform: translateY(-6px);
+} /* Stars */
+.stars {
+  color: #c89c5d; /* Accent gold */
+  margin-bottom: 12px;
+  font-size: 50px;
+} /* Testimonial Text */
+.text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+} /* Divider */
+.divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+} /* Name */
+.name {
+  font-weight: 700;
+  color: #7a5a2c; /* Same as heading */
+} /* Role */
+.role {
+  font-size: 13px;
+  color: #6d6d6d;
+} /* Responsive */
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .heading {
+    font-size: 26px;
+  }
+  .subheading {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+}

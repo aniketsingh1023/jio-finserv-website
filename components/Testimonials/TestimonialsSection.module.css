@@ -1,0 +1,300 @@
+/* ===================================================== */
+/* 1. SECTION LAYOUT */
+/* ===================================================== */
+
+.section {
+  background: linear-gradient(135deg, #f8f5ef, #fdf9f2);
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ===================================================== */
+/* 2. TYPOGRAPHY */
+/* ===================================================== */
+
+.heading {
+  font-size: 34px;
+  font-weight: 700;
+  color: #7a5a2c;
+}
+
+.subheading {
+  font-size: 16px;
+  margin-top: 8px;
+  color: #555;
+}
+
+/* ===================================================== */
+/* 3. SUMMARY (WITH SUBTLE SHIMMER) */
+/* ===================================================== */
+
+.summary {
+  margin-top: 25px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #a67c2d;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.summary::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 175, 55, 0.4),
+    rgba(248, 231, 181, 0.7),
+    rgba(212, 175, 55, 0.4),
+    transparent
+  );
+  background-size: 200% auto;
+  animation: shimmer 15s linear infinite;
+  opacity: 0.7;
+}
+
+.avg,
+.outOf,
+.total {
+  background: linear-gradient(180deg, #f8e7b5, #d4af37, #a67c2d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===================================================== */
+/* 4. AUTO SCROLL SLIDER */
+/* ===================================================== */
+
+.autoScrollWrapper {
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.autoScroll {
+  display: flex;
+  gap: 25px;
+  animation: scroll 25s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .autoScroll {
+    animation-duration: 14s;
+  }
+}
+
+/* ===================================================== */
+/* 5. CARD BASE */
+/* ===================================================== */
+
+.card {
+  position: relative;
+  min-width: 320px;
+  background: #fdf5dd;
+  border-radius: 24px;
+  padding: 25px;
+  overflow: hidden;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+/* ===================================================== */
+/* 6. CARD HOVER EFFECTS */
+/* ===================================================== */
+
+/* Lift */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 60px rgba(200, 156, 93, 0.35);
+}
+
+/* Border shimmer + glow pulse */
+.card:hover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  padding: 1px;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(248, 231, 181, 0.7),
+    rgba(212, 175, 55, 0.8),
+    rgba(248, 231, 181, 0.7),
+    transparent
+  );
+  background-size: 300% 300%;
+  animation:
+    borderShimmer 4s linear infinite,
+    glowPulse 2.5s ease-in-out infinite;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* Shine sweep */
+.card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(25deg);
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.card:hover::after {
+  left: 130%;
+  opacity: 1;
+}
+
+/* ===================================================== */
+/* 7. STARS SYSTEM (ULTRA PREMIUM) */
+/* ===================================================== */
+
+.stars {
+  display: inline-flex;
+  gap: 4px;
+  position: relative;
+}
+
+.star {
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.filled {
+  color: #d4af37;
+  animation: starWave 3.5s ease-in-out infinite;
+}
+
+.empty {
+  color: #e0d8c0;
+}
+
+/* Micro bounce */
+.card:hover .star {
+  animation: starBounce 0.4s ease;
+}
+
+/* ===================================================== */
+/* 8. CARD CONTENT */
+/* ===================================================== */
+
+.text {
+  margin: 15px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.6;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+  margin: 15px 0;
+}
+
+.name {
+  font-weight: 700;
+  color: #7a5a2c;
+}
+
+.role {
+  font-size: 14px;
+  color: #6d6d6d;
+}
+
+/* ===================================================== */
+/* 9. ANIMATIONS */
+/* ===================================================== */
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes borderShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
+@keyframes glowPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.6);
+  }
+}
+
+@keyframes starWave {
+  0%,
+  100% {
+    text-shadow:
+      0 0 4px rgba(212, 175, 55, 0.3),
+      0 0 8px rgba(212, 175, 55, 0.2);
+  }
+  50% {
+    text-shadow:
+      0 0 8px rgba(212, 175, 55, 0.7),
+      0 0 18px rgba(212, 175, 55, 0.4);
+  }
+}
+
+@keyframes starBounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-4px);
+  }
+  60% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

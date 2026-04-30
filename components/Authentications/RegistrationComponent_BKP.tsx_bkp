@@ -1,0 +1,14 @@
+// "use client";
+
+// import styles from "./RegistrationComponent.module.css";
+// import RegistrationPage from "@/components/ApplicationForms/Step1SignUp";
+
+// export default function RegistrationComponent() {
+//   return (
+//     <div className={styles.wrapper}>
+//       <div className={styles.container}>
+//         <RegistrationPage />
+//       </div>
+//     </div>
+//   );
+// }

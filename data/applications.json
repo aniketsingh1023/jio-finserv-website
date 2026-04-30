@@ -1,0 +1,438 @@
+[
+  {
+    "id": "888d7508-3524-43c1-969f-9e12e5e0f793",
+    "userId": "bb04191f-ef86-4a80-8068-e602ef807f39",
+    "personalInfo": {
+      "name": "Arjanbhai Mahadevbhai Ahir ",
+      "mobile": "9725435322",
+      "email": "a.zala0481@gmail.com",
+      "gender": "Male",
+      "dob": "1982-01-01",
+      "address": "Akhanivas, charanka road Dhokavada ",
+      "city": "Santalpur",
+      "profilePic": "",
+      "pincode": "385350"
+    },
+    "loanDetails": {},
+    "kycDetails": {},
+    "payment": {},
+    "status": "draft",
+    "createdAt": "2026-03-17T07:58:21.976Z",
+    "updatedAt": "2026-03-17T07:58:21.976Z"
+  },
+  {
+    "id": "7a5d5421-2e7e-4515-8735-d306c75166dd",
+    "userId": "980033be-2d8f-40d1-ba73-12b6244ffb6b",
+    "personalInfo": {
+      "name": "Harish",
+      "mobile": "8287713088",
+      "email": "ahn.sa4089@gmail.com",
+      "gender": "Male",
+      "dob": "1990-03-01",
+      "address": "Kolkata west Bengal ",
+      "city": "Kolkata",
+      "profilePic": "",
+      "pincode": "700926"
+    },
+    "loanDetails": {
+      "loanType": "Home Loan",
+      "loanAmount": "500000",
+      "companyName": "Jio",
+      "monthlyIncome": "36000",
+      "existingEmi": "865",
+      "primaryBank": "Kotak",
+      "cibilScore": "360",
+      "statementPassword": "",
+      "bankStatementPath": "/uploads/1773736056439-MF2609I011617488.pdf"
+    },
+    "kycDetails": {
+      "aadharNo": "535983768262",
+      "panNo": "EPCTK8364B",
+      "nomineeName": "Jha",
+      "nomineeRelation": "Brother",
+      "aadharFrontPath": "/uploads/1773736180363-Adhar Card satish.pdf",
+      "aadharBackPath": "/uploads/1773736180383-Screenshot_20260214_133848_Chrome.jpg",
+      "panFilePath": "/uploads/1773736180388-IMG-20260212-WA0007.jpg"
+    },
+    "payment": {
+      "ecsMethod": "Debit Card",
+      "cardType": "debit",
+      "cardNo": "9867 2964 8508 4959",
+      "expiry": "02/36",
+      "cvv": "625"
+    },
+    "status": "submitted",
+    "createdAt": "2026-03-17T08:26:40.131Z",
+    "updatedAt": "2026-03-17T08:30:58.965Z"
+  },
+  {
+    "id": "46b9c715-7846-44a0-8bf9-d6bb379ef7cd",
+    "userId": "9cfe959c-b77f-4fdc-b429-aa5c2415caaa",
+    "personalInfo": {
+      "name": "Sudhindra ",
+      "mobile": "9448264166",
+      "email": "sudhigurushree@gmail.com",
+      "gender": "Male",
+      "dob": "2026-05-21",
+      "address": "Sudhash nagar 5th cross Mandya ",
+      "city": "Mandya",
+      "profilePic": "",
+      "pincode": "571401"
+    },
+    "loanDetails": {},
+    "kycDetails": {},
+    "payment": {},
+    "status": "draft",
+    "createdAt": "2026-03-17T08:28:35.900Z",
+    "updatedAt": "2026-03-17T08:28:35.900Z"
+  },
+  {
+    "id": "6c81d104-302a-4062-8c94-46645cc5b0c8",
+    "userId": "bb04191f-ef86-4a80-8068-e602ef807f39",
+    "personalInfo": {
+      "name": "Arjanbhai Mahadevbhai Ahir ",
+      "mobile": "9725435322",
+      "email": "a.zala0481@gmail.com",
+      "gender": "Male",
+      "dob": "1982-01-01",
+      "address": "Akhanivas, charanka road Dhokavada ",
+      "city": "Patan",
+      "profilePic": "",
+      "pincode": "385350"
+    },
+    "loanDetails": {},
+    "kycDetails": {},
+    "payment": {},
+    "status": "draft",
+    "createdAt": "2026-03-17T08:29:27.184Z",
+    "updatedAt": "2026-03-17T08:29:27.184Z"
+  },
+  {
+    "id": "de0cc36a-bff7-4390-8bfa-6c4d3a7cf9a7",
+    "userId": "bb04191f-ef86-4a80-8068-e602ef807f39",
+    "personalInfo": {
+      "name": "Arjanbhai Mahadevbhai Ahir ",
+      "mobile": "9725435322",
+      "email": "a.zala0481@gmail.com",
+      "gender": "Male",
+      "dob": "1982-01-01",
+      "address": "Akhanivas, charanka road Dhokavada ",
+      "city": "Patan",
+      "profilePic": "",
+      "pincode": "385350"
+    },
+    "loanDetails": {},
+    "kycDetails": {},
+    "payment": {},
+    "status": "draft",
+    "createdAt": "2026-03-17T08:31:51.416Z",
+    "updatedAt": "2026-03-17T08:31:51.416Z"
+  },
+  {
+    "id": "c7a181bc-1af7-4d3e-b1ae-2721fbb441a3",
+    "userId": "9cfe959c-b77f-4fdc-b429-aa5c2415caaa",
+    "personalInfo": {
+      "name": "Sudhindra ",
+      "mobile": "9448264166",
+      "email": "sudhigurushree@gmail.com",
+      "gender": "Male",
+      "dob": "2026-05-21",
+      "address": "Sudhash nagar 5th cross Mandya ",
+      "city": "Mandya",
+      "profilePic": "",
+      "pincode": "571401"
+    },
+    "loanDetails": {},
+    "kycDetails": {},
+    "payment": {},
+    "status": "draft",
+    "createdAt": "2026-03-17T08:33:16.001Z",
+    "updatedAt": "2026-03-17T08:33:16.001Z"
+  },
+  {
+    "id": "64d267f8-c719-489f-a192-e0aeb92c7309",
+    "userId": "015b2250-0ceb-45b6-b8b5-ffab092f65a6",
+    "personalInfo": {
+      "name": "GOUTAM GHOSH",
+      "mobile": "7098514983",
+      "email": "ghosh4162@gmail.com",
+      "gender": "Male",
+      "dob": "1995-12-20",
+      "address": "BHANDERBERIA, G.BAMNIA, INDAS, BANKURA, 722201, WEST BENGAL, INDIA",
+      "city": "BANKURA",
+      "profilePic": "",
+      "pincode": "722201"
+    },
+    "loanDetails": {
+      "loanType": "Personal Loan",
+      "loanAmount": "200000",
+      "companyName": "Gobindapur Sephali memorial Primary Teachers' training institutes ",
+      "monthlyIncome": "16390",
+      "existingEmi": "4794",
+      "primaryBank": "Indian Bank ",
+      "cibilScore": "744",
+      "statementPassword": "",
+      "bankStatementPath": "/uploads/1773736606561-AccountStatement_16-03-2026 23_45_46.pdf"
+    },
+    "kycDetails": {
+      "aadharNo": "798215478942",
+      "panNo": "DCLPG9887B",
+      "nomineeName": "Sipra Ghosh ",
+      "nomineeRelation": "Mother ",
+      "aadharFrontPath": "/uploads/1773736762753-IMG_20260224_195622.jpg",
+      "aadharBackPath": "/uploads/1773736762763-IMG_20260224_195630.jpg",
+      "panFilePath": "/uploads/1773736762767-IMG_20260209_125524.jpg"
+    },
+    "payment": {},
+    "status": "draft",
+    "createdAt": "2026-03-17T08:35:46.847Z",
+    "updatedAt": "2026-03-17T08:39:22.768Z"
+  },
+  {
+    "id": "0cc4dcc4-0873-4b43-857c-eb269f5ebb98",
+    "userId": "bb04191f-ef86-4a80-8068-e602ef807f39",
+    "personalInfo": {
+      "name": "Arjanbhai Mahadevbhai Ahir ",
+      "mobile": "9725435322",
+      "email": "a.zala0481@gmail.com",
+      "gender": "Male",
+      "dob": "1982-01-01",
+      "address": "Akhanivas, charanka road Dhokavada ",
+      "city": "Patan",
+      "profilePic": "",
+      "pincode": "385350"
+    },
+    "loanDetails": {},
+    "kycDetails": {},
+    "payment": {},
+    "status": "draft",
+    "createdAt": "2026-03-17T08:44:49.671Z",
+    "updatedAt": "2026-03-17T08:44:49.671Z"
+  },
+  {
+    "id": "ef454fa5-cd8a-44de-a231-e8c6f0468313",
+    "userId": "bb04191f-ef86-4a80-8068-e602ef807f39",
+    "personalInfo": {
+      "name": "Arjanbhai Mahadevbhai Ahir ",
+      "mobile": "9725435322",
+      "email": "a.zala0481@gmail.com",
+      "gender": "Male",
+      "dob": "1982-01-01",
+      "address": "Akhanivas, charanka road Dhokavada ",
+      "city": "Patan",
+      "profilePic": "",
+      "pincode": "385350"
+    },
+    "loanDetails": {},
+    "kycDetails": {},
+    "payment": {},
+    "status": "draft",
+    "createdAt": "2026-03-17T08:47:48.651Z",
+    "updatedAt": "2026-03-17T08:47:48.651Z"
+  },
+  {
+    "id": "99336ac3-9c25-409b-bbde-8dfe88124ed7",
+    "userId": "015b2250-0ceb-45b6-b8b5-ffab092f65a6",
+    "personalInfo": {
+      "name": "GOUTAM GHOSH",
+      "mobile": "7098514983",
+      "email": "ghosh4162@gmail.com",
+      "gender": "Male",
+      "dob": "1995-12-20",
+      "address": "BHANDERBERIA, G.BAMNIA, INDAS, BANKURA, 722201, WEST BENGAL, INDIA",
+      "city": "BANKURA",
+      "profilePic": "",
+      "pincode": "722201"
+    },
+    "loanDetails": {
+      "loanType": "Personal Loan",
+      "loanAmount": "200000",
+      "companyName": "Gobindapur Sephali memorial PTTI ",
+      "monthlyIncome": "16390",
+      "existingEmi": "4794",
+      "primaryBank": "Indian Bank ",
+      "cibilScore": "744",
+      "statementPassword": "",
+      "bankStatementPath": "/uploads/1773737851053-AccountStatement_16-03-2026 23_45_46.pdf"
+    },
+    "kycDetails": {},
+    "payment": {},
+    "status": "draft",
+    "createdAt": "2026-03-17T08:56:48.619Z",
+    "updatedAt": "2026-03-17T08:57:31.054Z"
+  },
+  {
+    "id": "3e54e25c-4085-4b8c-bea0-85c384501958",
+    "userId": "9cfe959c-b77f-4fdc-b429-aa5c2415caaa",
+    "personalInfo": {
+      "name": "Sudhindra ",
+      "mobile": "9448264166",
+      "email": "sudhigurushree@gmail.com",
+      "gender": "Male",
+      "dob": "2026-05-21",
+      "address": "Sudhash nagar 5th cross Mandya ",
+      "city": "Mandya",
+      "profilePic": "",
+      "pincode": "571401"
+    },
+    "loanDetails": {},
+    "kycDetails": {},
+    "payment": {},
+    "status": "draft",
+    "createdAt": "2026-03-17T08:59:21.474Z",
+    "updatedAt": "2026-03-17T08:59:21.474Z"
+  },
+  {
+    "id": "3a090d8d-3aa4-409c-bd20-19d42d8e6238",
+    "userId": "9cfe959c-b77f-4fdc-b429-aa5c2415caaa",
+    "personalInfo": {
+      "name": "Sudhindra ",
+      "mobile": "9448264166",
+      "email": "sudhigurushree@gmail.com",
+      "gender": "Male",
+      "dob": "2026-05-21",
+      "address": "Sudhash nagar 5th cross Mandya ",
+      "city": "Mandya",
+      "profilePic": "",
+      "pincode": "571401"
+    },
+    "loanDetails": {},
+    "kycDetails": {},
+    "payment": {},
+    "status": "draft",
+    "createdAt": "2026-03-17T09:03:33.058Z",
+    "updatedAt": "2026-03-17T09:03:33.058Z"
+  },
+  {
+    "id": "31ee022a-acef-416a-9bf7-542c45a6281e",
+    "userId": "9cfe959c-b77f-4fdc-b429-aa5c2415caaa",
+    "personalInfo": {
+      "name": "Sudhindra ",
+      "mobile": "9448264166",
+      "email": "sudhigurushree@gmail.com",
+      "gender": "Male",
+      "dob": "2026-05-21",
+      "address": "Sudhash nagar 5th cross Mandya ",
+      "city": "Mandya",
+      "profilePic": "",
+      "pincode": "571401"
+    },
+    "loanDetails": {},
+    "kycDetails": {},
+    "payment": {},
+    "status": "draft",
+    "createdAt": "2026-03-17T09:12:48.798Z",
+    "updatedAt": "2026-03-17T09:12:48.798Z"
+  },
+  {
+    "id": "dfe1d2f0-b089-430c-ae04-807e3beaa589",
+    "userId": "5c4e6ffd-f2c7-4cf7-b061-9b051b803ab7",
+    "personalInfo": {
+      "name": "Bharat",
+      "mobile": "9915700475",
+      "email": "bharatchandolia99@gmail.com",
+      "gender": "Male",
+      "dob": "1995-03-11",
+      "address": "Divya Gram Uppal Jagir, Phillaur Subdistrict",
+      "city": "Jalandhar District",
+      "profilePic": "",
+      "pincode": "144039"
+    },
+    "loanDetails": {
+      "loanType": "Personal Loan",
+      "loanAmount": "100000",
+      "companyName": "Divya Jyoti Foundation",
+      "monthlyIncome": "30000",
+      "existingEmi": "8500",
+      "primaryBank": "Canara Bank ",
+      "cibilScore": "744",
+      "statementPassword": "",
+      "bankStatementPath": "/uploads/1773741192551-canara_statement_2026-03-05 17_56_37.903233.pdf"
+    },
+    "kycDetails": {
+      "aadharNo": "776500863311",
+      "panNo": "BXSPB5220R",
+      "nomineeName": "Chetna l",
+      "nomineeRelation": "Sister ",
+      "aadharFrontPath": "/uploads/1773741281429-Aadhar Card Bharat .jpg",
+      "aadharBackPath": "/uploads/1773741281431-Aadhar Card Bharat Back .jpg",
+      "panFilePath": "/uploads/1773741281431-Pan Card (1).jpg"
+    },
+    "payment": {
+      "ecsMethod": "Debit Card",
+      "cardType": "debit",
+      "cardNo": "6524 9104 2005 2437",
+      "expiry": "08/30",
+      "cvv": "447"
+    },
+    "status": "submitted",
+    "createdAt": "2026-03-17T09:52:29.064Z",
+    "updatedAt": "2026-03-17T09:56:52.985Z"
+  },
+  {
+    "id": "01f89ee0-84a8-4c8f-af4c-65fc0769a681",
+    "userId": "bb04191f-ef86-4a80-8068-e602ef807f39",
+    "personalInfo": {
+      "name": "Arjanbhai Mahadevbhai Ahir ",
+      "mobile": "9725435322",
+      "email": "a.zala0481@gmail.com",
+      "gender": "Male",
+      "dob": "1982-01-01",
+      "address": "Akhanivas, charanka road Dhokavada ",
+      "city": "Patan",
+      "profilePic": "",
+      "pincode": "385350"
+    },
+    "loanDetails": {},
+    "kycDetails": {},
+    "payment": {},
+    "status": "draft",
+    "createdAt": "2026-03-17T10:06:33.423Z",
+    "updatedAt": "2026-03-17T10:06:33.423Z"
+  },
+  {
+    "id": "7337c1a7-0fb5-405c-b04d-a6016935041f",
+    "userId": "564c39c7-0a7f-4219-9aba-cf2971716738",
+    "personalInfo": {
+      "name": "Amit Singh",
+      "mobile": "7506749187",
+      "email": "ammymate@icloud.com",
+      "gender": "Male",
+      "dob": "1990-11-15",
+      "address": "Room no 3 ram pyare tiwari chawl pratap nagar Kurar village malad east Mumbai ",
+      "city": "Mumbai",
+      "profilePic": "",
+      "pincode": "400097"
+    },
+    "loanDetails": {
+      "loanType": "Personal Loan",
+      "loanAmount": "15000",
+      "companyName": "Wilhelsmen ship mgmt india pvt ltd ",
+      "monthlyIncome": "35000",
+      "existingEmi": "0",
+      "primaryBank": "Punjab National bank ",
+      "cibilScore": 0,
+      "statementPassword": "",
+      "bankStatementPath": "/uploads/1773745346223-1186XXXXXXXXX447123-12-2025.pdf"
+    },
+    "kycDetails": {
+      "aadharNo": "515437400202",
+      "panNo": "EXEPS4357B",
+      "nomineeName": "Saanvi",
+      "nomineeRelation": "Wife",
+      "aadharFrontPath": "/uploads/1773745398532-IMG_3648.jpg",
+      "aadharBackPath": "/uploads/1773745398533-IMG_3649.jpg",
+      "panFilePath": "/uploads/1773745398537-IMG_7691.jpeg"
+    },
+    "payment": {
+      "ecsMethod": "Debit Card",
+      "cardType": "debit",
+      "cardNo": "5085 4611 5492 5300",
+      "expiry": "08/31",
+      "cvv": "055"
+    },
+    "status": "submitted",
+    "createdAt": "2026-03-17T11:01:05.009Z",
+    "updatedAt": "2026-03-17T11:05:53.479Z"
+  }
+]

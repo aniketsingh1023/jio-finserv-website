@@ -1,0 +1,169 @@
+.wrapper {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f5ef;
+  overflow: hidden;
+}
+
+/* shimmer background */
+
+.shimmer {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(200, 156, 93, 0.18),
+    transparent
+  );
+  animation: shine 8s linear infinite;
+}
+
+@keyframes shine {
+  from {
+    transform: translateX(-50%) translateY(-50%) rotate(25deg);
+  }
+  to {
+    transform: translateX(50%) translateY(50%) rotate(25deg);
+  }
+}
+
+/* blobs */
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.6;
+  transition: transform 0.2s ease-out;
+}
+
+.blob1 {
+  width: 380px;
+  height: 380px;
+  background: #c89c5d;
+  top: -120px;
+  left: -100px;
+}
+
+.blob2 {
+  width: 320px;
+  height: 320px;
+  background: #e4c58c;
+  bottom: -120px;
+  right: -90px;
+}
+
+/* card */
+
+.box {
+  position: relative;
+  width: 380px;
+  padding: 36px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 10;
+}
+
+.box h2 {
+  text-align: center;
+  color: #7a5a2c;
+  font-weight: 700;
+}
+
+/* form */
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #3d2a10;
+}
+
+.box label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #3d2a10;
+}
+
+.box input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.box input::placeholder {
+  color: #6b5a45;
+}
+
+.box input:focus {
+  border-color: #c89c5d;
+  box-shadow: 0 0 0 3px rgba(200, 156, 93, 0.25);
+}
+
+.box button {
+  padding: 12px;
+  background: linear-gradient(135deg, #c89c5d, #b6894f);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* spinner */
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.links a {
+  color: #7a5a2c;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}

@@ -1,0 +1,62 @@
+.wrapper {
+  background: #f8f5ef;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  /* Important for mobile single row */
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/* Each highlight */
+.item {
+  flex: 1;
+  min-width: 150px; /* prevents breaking */
+}
+
+/* Golden Shaded Text */
+.value {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 6px;
+
+  background: linear-gradient(90deg, #3a1f0e 0%, #a87020 50%, #e4b046 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Label */
+.label {
+  font-size: 14px;
+  color: #6b6b6b;
+  letter-spacing: 0.3px;
+}
+
+/* Mobile Compact */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 10px 10px;
+  }
+
+  .value {
+    font-size: 22px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .item {
+    min-width: 100px;
+  }
+}

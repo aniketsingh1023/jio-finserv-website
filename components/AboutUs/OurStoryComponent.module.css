@@ -1,0 +1,113 @@
+.section {
+  background: #f8f5ef;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT CONTENT */
+
+.heading {
+  font-size: 34px;
+  font-weight: 700;
+  color: #7a5a2c;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 16px;
+  color: #4b4a4a;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+/* RIGHT CARDS */
+
+.cardsWrapper {
+  display: flex;
+  gap: 30px;
+}
+
+/* Card Style (same pattern as your grid cards) */
+.card {
+  background: #f4f4f4;
+  border: 2px solid #c89c5d;
+  border-radius: 22px;
+  padding: 35px 25px;
+  transition: all 0.3s ease;
+  text-align: center;
+  flex: 1;
+}
+
+.card:hover {
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(200, 156, 93, 0.2);
+  transform: translateY(-6px);
+}
+
+/* Icon */
+.iconWrapper {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 18px auto;
+  border-radius: 16px;
+  background: rgba(200, 156, 93, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c89c5d;
+}
+
+/* Title */
+.card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #7a5a2c;
+}
+
+/* Description */
+.card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .cardsWrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 15px;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+
+  .cardsWrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 25px 20px;
+  }
+}

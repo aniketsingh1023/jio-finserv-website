@@ -1,0 +1,127 @@
+.wrapper {
+  padding: 40px 20px;
+  background: #f8f5ef;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  color: #6b6b6b;
+}
+
+.breadcrumbItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #7a5a2c;
+  font-weight: 500;
+}
+
+.active {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Hero Section */
+.heroBox {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 30px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* GOLDEN GRADIENT (Always Visible) */
+.gradientLayer {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #3a1f0e 0%, #a87020 50%, #e4b046 100%);
+  z-index: 0;
+}
+
+/* Dark Overlay above gradient but below text */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+/* Content */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  color: #ffffff;
+}
+
+.content h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.content h2 {
+  font-size: 28px;
+  font-weight: 5 00;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #f2f2f2;
+}
+
+.content button {
+  background: #e6b36a;
+  color: #2b1a08;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.content button:hover {
+  background: #f5c37d;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heroBox {
+    min-height: 380px;
+    padding: 40px 20px;
+  }
+
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+}

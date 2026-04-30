@@ -1,0 +1,83 @@
+/* FULL PAGE BACKGROUND */
+
+.wrapper {
+  min-height: 100vh;
+  padding: 40px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  background: radial-gradient(circle at top left, #2a1c08, #000000);
+
+  position: relative;
+  overflow: hidden;
+}
+
+/* GOLD SHINING EFFECT */
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    rgba(200, 156, 93, 0.35) 50%,
+    transparent 60%
+  );
+
+  animation: goldShine 8s linear infinite;
+}
+
+/* GOLD GLOW ORBS */
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(200, 156, 93, 0.35),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(200, 156, 93, 0.25),
+      transparent 35%
+    );
+
+  pointer-events: none;
+}
+
+/* REGISTRATION CARD */
+
+.container {
+  max-width: 850px;
+  width: 100%;
+
+  padding: 30px;
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+
+  position: relative;
+  z-index: 2;
+}
+
+/* SHINE ANIMATION */
+
+@keyframes goldShine {
+  0% {
+    transform: rotate(25deg) translateX(-50%);
+  }
+  100% {
+    transform: rotate(25deg) translateX(50%);
+  }
+}

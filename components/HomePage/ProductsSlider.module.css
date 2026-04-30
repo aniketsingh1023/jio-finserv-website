@@ -1,0 +1,202 @@
+.section {
+  background: #f8f5ef;
+  padding: 40px 80px;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: 34px;
+  font-weight: 700;
+  color: #7a5a2c; /* Same heading color */
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 16px;
+  color: #4b4a4a;
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  line-height: 1.6;
+}
+
+.swiper {
+  padding-bottom: 50px;
+}
+
+.card {
+  background: #f4f4f4;
+  border: 2px solid #c89c5d;
+  border-radius: 25px;
+  padding: 40px 25px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: white;
+  box-shadow: 0 20px 40px rgba(200, 156, 93, 0.2);
+  transform: translateY(-8px);
+}
+
+/* Title */
+.card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #7a5a2c;
+}
+
+/* Description */
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Icon */
+.iconWrapper {
+  margin: 20px 0 30px;
+  color: #c89c5d;
+  display: flex;
+  justify-content: center;
+}
+
+/* Explore Button */
+/* Premium Explore Button */
+.exploreBtn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 24px;
+  border-radius: 40px;
+
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #c89c5d, #b8833f);
+  color: white;
+
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Arrow animation */
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+/* Hover (desktop only) */
+@media (hover: hover) {
+  .exploreBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(200, 156, 93, 0.35);
+  }
+
+  .exploreBtn:hover .arrow {
+    transform: translateX(5px);
+  }
+}
+
+/* Tap feedback (mobile) */
+.exploreBtn:active {
+  transform: scale(0.96);
+}
+
+/* Pagination */
+.swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #c89c5d;
+}
+/* ============================= */
+/* 📱 Mobile Optimization */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 15px;
+  }
+
+  .card {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  .iconWrapper {
+    margin: 15px 0 20px;
+  }
+
+  .exploreBtn {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  /* Remove hover effect on mobile */
+  .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .card {
+    padding: 25px 18px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 12px;
+  }
+}
+
+/* ============================= */
+/* 📱 Premium Mobile Styling */
+/* ============================= */
+
+@media (max-width: 768px) {
+  /* Active Slide Highlight */
+  .swiper-slide-active .card {
+    transform: scale(1);
+    box-shadow: 0 15px 35px rgba(200, 156, 93, 0.25);
+    background: white;
+  }
+
+  .swiper-slide .card {
+    transform: scale(0.92);
+    transition: all 0.4s ease;
+  }
+
+  /* Remove hover for touch devices */
+  .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}

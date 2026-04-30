@@ -1,0 +1,87 @@
+.section {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #d4a65a 0%, #c79645 50%, #b8842f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  max-width: 900px;
+  color: #1a1a1a; /* Dark text for gold background */
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.title span {
+  color: #ffffff; /* Highlight */
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Primary Button */
+.primary {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.primary:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Outline Button */
+.outline {
+  background: transparent;
+  border: 2px solid #000;
+  color: #000;
+}
+
+.outline:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

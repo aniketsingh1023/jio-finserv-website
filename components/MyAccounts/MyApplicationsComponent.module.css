@@ -1,0 +1,141 @@
+.container {
+  border: 1px solid #eee;
+  max-width: 1200px;
+  position: relative;
+  margin: 50px auto;
+  padding: 35px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 14px;
+}
+.container h2 {
+  margin-bottom: 20px;
+  color: rgb(61, 60, 60);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.empty {
+  margin-top: 15px;
+  color: #666;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: black;
+}
+
+.table th {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 2px solid #7e7e7e;
+  font-weight: 600;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.draftBadge {
+  background: #f4b942;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: white;
+}
+
+.submittedBadge {
+  background: #2e7d32;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: white;
+}
+
+.editButton {
+  padding: 6px 12px;
+  background: #c89c5d;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.editButton:hover {
+  opacity: 0.9;
+}
+
+.viewButton {
+  padding: 6px 12px;
+  background: #555;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.viewButton:hover {
+  opacity: 0.9;
+}
+
+.table tbody tr {
+  background: #fafafa;
+  color: black;
+}
+
+.table tbody tr:hover {
+  background: #f0eded;
+}
+
+.table tbody tr:nth-child(even) {
+  background: #fcfcfc;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.emptyBox {
+  text-align: center;
+  margin-top: 30px;
+}
+.emptyBox p {
+  color: #666;
+  font-size: 18px;
+}
+
+.newBtn {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.newBtn:hover {
+  background: #1e40af;
+}
+
+.appId {
+  font-family: monospace;
+}
+
+.submittedBadge {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.draftBadge {
+  background: #fef9c3;
+  color: #854d0e;
+  padding: 4px 10px;
+  border-radius: 6px;
+}

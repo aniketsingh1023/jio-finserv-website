@@ -1,0 +1,75 @@
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #f8f5ef 0%, #f1e9dc 50%, #f8f5ef 100%);
+}
+
+/* soft gradient movement */
+
+.gradient {
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(200, 156, 93, 0.18),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(200, 156, 93, 0.15),
+      transparent 40%
+    );
+
+  animation: moveGradient 18s ease-in-out infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-40px, 30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* floating circles */
+
+.circle1 {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  background: rgba(200, 156, 93, 0.12);
+  border-radius: 50%;
+  filter: blur(120px);
+  top: -120px;
+  left: -120px;
+}
+
+.circle2 {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  background: rgba(200, 156, 93, 0.12);
+  border-radius: 50%;
+  filter: blur(120px);
+  bottom: -140px;
+  right: -120px;
+}
+
+/* content layer */
+
+.content {
+  position: relative;
+  z-index: 10;
+}

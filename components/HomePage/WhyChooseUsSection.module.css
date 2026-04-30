@@ -1,0 +1,93 @@
+.section {
+  background: #f8f5ef; /* warm light background matching gold theme */
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.header {
+  text-align: center;
+}
+.heading {
+  font-size: 34px;
+  font-weight: 700;
+  color: #7a5a2c; /* Same heading color */
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 16px;
+  color: #4b4a4a;
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  line-height: 1.6;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(200, 156, 93, 0.15);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(200, 156, 93, 0.15);
+  border-color: #c89c5d;
+}
+
+/* Icon */
+.iconWrapper {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px auto;
+  border-radius: 14px;
+  background: rgba(200, 156, 93, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c89c5d;
+  transition: 0.3s ease;
+}
+
+.card:hover .iconWrapper {
+  background: #c89c5d;
+  color: white;
+}
+
+/* Title */
+.card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+/* Description */
+.card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
