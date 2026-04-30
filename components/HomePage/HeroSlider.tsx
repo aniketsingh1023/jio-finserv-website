@@ -67,29 +67,34 @@ export default function HeroSection() {
 
                 <div className={styles.buttons}>
                   <ApplyButton text="Apply Now" />
-                  <ApplyButton text="Calculate EMI" href="/emi-calculator" variant="dark" />
-                     <a
-                       href="/apk/finserve-app.apk"
-                       download
-                       style={{
-                         display: "inline-flex",
-                         alignItems: "center",
-                         gap: 8,
-                         background: "linear-gradient(90deg, #d4a65a 0%, #b8842f 100%)",
-                         color: "#0b1a33",
-                         fontWeight: 600,
-                         borderRadius: 8,
-                         padding: "8px 18px",
-                         fontSize: 16,
-                         textDecoration: "none",
-                         boxShadow: "0 2px 8px rgba(212, 166, 90, 0.15)",
-                         transition: "background 0.3s, color 0.3s"
-                       }}
-                     >
-                       {/* @ts-ignore */}
-                       <PlayStoreIcon size={28} />
-                       <span>Download the App Now</span>
-                     </a>
+                  <ApplyButton
+                    text="Calculate EMI"
+                    href="/emi-calculator"
+                    variant="dark"
+                  />
+                  <a
+                    href="/apk/jio-finserv-v2.apk"
+                    download
+                    style={{
+                      display: "inline-flex",
+                      alignItems: "center",
+                      gap: 8,
+                      background:
+                        "linear-gradient(90deg, #d4a65a 0%, #b8842f 100%)",
+                      color: "#0b1a33",
+                      fontWeight: 600,
+                      borderRadius: 8,
+                      padding: "8px 18px",
+                      fontSize: 16,
+                      textDecoration: "none",
+                      boxShadow: "0 2px 8px rgba(212, 166, 90, 0.15)",
+                      transition: "background 0.3s, color 0.3s",
+                    }}
+                  >
+                    {/* @ts-ignore */}
+                    <PlayStoreIcon size={28} />
+                    <span>Download the App Now</span>
+                  </a>
                 </div>
               </div>
             </div>

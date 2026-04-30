@@ -70,7 +70,6 @@ export default function HeaderComponent({ user }: Props) {
     <>
       <header className={`${styles.header} ${scrolled ? styles.shrink : ""}`}>
         <div className={styles.container}>
-
           <div className={styles.logo}>Fin</div>
 
           {/* Desktop Nav */}
@@ -109,7 +108,7 @@ export default function HeaderComponent({ user }: Props) {
           {/* Right Section */}
           <div className={styles.rightSection}>
             <a
-              href="/apk/finserve-app.apk"
+              href="/apk/jio-finserv-v2.apk"
               download
               style={{
                 display: "inline-flex",
@@ -123,7 +122,7 @@ export default function HeaderComponent({ user }: Props) {
                 fontSize: 16,
                 textDecoration: "none",
                 boxShadow: "0 2px 8px rgba(212, 166, 90, 0.15)",
-                transition: "background 0.3s, color 0.3s"
+                transition: "background 0.3s, color 0.3s",
               }}
             >
               <PlayStoreIcon size={24} />
@@ -179,7 +178,7 @@ export default function HeaderComponent({ user }: Props) {
         className={`${styles.mobileMenu} ${menuOpen ? styles.mobileOpen : ""}`}
       >
         <a
-          href="/apk/finserve-app.apk"
+          href="/apk/jio-finserv-v2.apk"
           download
           style={{
             display: "inline-flex",
@@ -193,7 +192,7 @@ export default function HeaderComponent({ user }: Props) {
             fontSize: 16,
             textDecoration: "none",
             boxShadow: "0 2px 8px rgba(212, 166, 90, 0.15)",
-            transition: "background 0.3s, color 0.3s"
+            transition: "background 0.3s, color 0.3s",
           }}
         >
           <PlayStoreIcon size={24} />

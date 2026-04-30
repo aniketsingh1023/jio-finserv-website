@@ -1,6 +1,5 @@
 "use client";
 
-
 import styles from "./FooterSection.module.css";
 import { MapPin, Phone, Mail } from "lucide-react";
 import Link from "next/link";
@@ -102,10 +101,15 @@ export default function FooterSection() {
         </div>
 
         <a
-          href="/apk/finserve-app.apk"
+          href="/apk/jio-finserv-v2.apk"
           download
           className={styles.downloadAppBtn}
-          style={{ display: "inline-flex", alignItems: "center", gap: 8, marginLeft: 16 }}
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 8,
+            marginLeft: 16,
+          }}
         >
           <PlayStoreIcon size={28} />
           <span>Download the App Now</span>
