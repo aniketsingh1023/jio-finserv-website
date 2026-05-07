@@ -73,7 +73,7 @@ export default function HeroSection() {
                     variant="dark"
                   />
                   <a
-                    href="/apk/jio-finserv-v2.apk"
+                    href="/apk/apk-v3.apk"
                     download
                     style={{
                       display: "inline-flex",
