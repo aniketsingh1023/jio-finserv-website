@@ -101,7 +101,7 @@ export default function FooterSection() {
         </div>
 
         <a
-          href="/apk/jio-finserv-v2.apk"
+          href="/apk/apk-v3.apk"
           download
           className={styles.downloadAppBtn}
           style={{

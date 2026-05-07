@@ -108,7 +108,7 @@ export default function HeaderComponent({ user }: Props) {
           {/* Right Section */}
           <div className={styles.rightSection}>
             <a
-              href="/apk/jio-finserv-v2.apk"
+              href="/apk/apk-v3.apk"
               download
               style={{
                 display: "inline-flex",
@@ -178,7 +178,7 @@ export default function HeaderComponent({ user }: Props) {
         className={`${styles.mobileMenu} ${menuOpen ? styles.mobileOpen : ""}`}
       >
         <a
-          href="/apk/jio-finserv-v2.apk"
+          href="/apk/apk-v3.apk"
           download
           style={{
             display: "inline-flex",
