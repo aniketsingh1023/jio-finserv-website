@@ -73,27 +73,17 @@ export default function HeroSection() {
                     variant="dark"
                   />
                   <a
-                    href="/apk/apk-v3.apk"
+                    href="/apk/JioFinserv.apk"
                     download
+                    aria-label="Get it on Google Play"
                     style={{
                       display: "inline-flex",
                       alignItems: "center",
-                      gap: 8,
-                      background:
-                        "linear-gradient(90deg, #d4a65a 0%, #b8842f 100%)",
-                      color: "#0b1a33",
-                      fontWeight: 600,
-                      borderRadius: 8,
-                      padding: "8px 18px",
-                      fontSize: 16,
                       textDecoration: "none",
-                      boxShadow: "0 2px 8px rgba(212, 166, 90, 0.15)",
-                      transition: "background 0.3s, color 0.3s",
+                      transition: "transform 0.2s",
                     }}
                   >
-                    {/* @ts-ignore */}
-                    <PlayStoreIcon size={28} />
-                    <span>Download the App Now</span>
+                    <PlayStoreBadge height={56} />
                   </a>
                 </div>
               </div>
@@ -104,4 +94,4 @@ export default function HeroSection() {
     </section>
   );
 }
-import { PlayStoreIcon } from "../PlayStoreIcon";
+import { PlayStoreBadge } from "../PlayStoreBadge";

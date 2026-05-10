@@ -12,7 +12,7 @@ export default function OurStoryComponent() {
           <h2 className={styles.heading}>Our Story</h2>
 
           <p>
-            Finserv Limited was established with a vision to provide accessible
+            Jio Finserv Limited was established with a vision to provide accessible
             financial solutions to individuals and businesses across India. With
             over a decade of experience in the financial services industry, we
             have grown to become one of the most trusted names in the NBFC

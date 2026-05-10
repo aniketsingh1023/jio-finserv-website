@@ -5,7 +5,7 @@ import styles from "./HeaderComponent.module.css";
 import { useState, useEffect, useRef } from "react";
 
 import ApplyButton from "@/components/Buttons/ApplyButton";
-import { PlayStoreIcon } from "../PlayStoreIcon";
+import { PlayStoreBadge } from "../PlayStoreBadge";
 
 interface Props {
   user: {
@@ -108,25 +108,16 @@ export default function HeaderComponent({ user }: Props) {
           {/* Right Section */}
           <div className={styles.rightSection}>
             <a
-              href="/apk/apk-v3.apk"
+              href="/apk/JioFinserv.apk"
               download
+              aria-label="Get it on Google Play"
               style={{
                 display: "inline-flex",
                 alignItems: "center",
-                gap: 8,
-                background: "linear-gradient(90deg, #d4a65a 0%, #b8842f 100%)",
-                color: "#0b1a33",
-                fontWeight: 600,
-                borderRadius: 8,
-                padding: "8px 18px",
-                fontSize: 16,
                 textDecoration: "none",
-                boxShadow: "0 2px 8px rgba(212, 166, 90, 0.15)",
-                transition: "background 0.3s, color 0.3s",
               }}
             >
-              <PlayStoreIcon size={24} />
-              <span>Download the App</span>
+              <PlayStoreBadge height={42} />
             </a>
             {!isLoggedIn ? (
               <Link href="/login" className={styles.signIn}>
@@ -178,25 +169,16 @@ export default function HeaderComponent({ user }: Props) {
         className={`${styles.mobileMenu} ${menuOpen ? styles.mobileOpen : ""}`}
       >
         <a
-          href="/apk/apk-v3.apk"
+          href="/apk/JioFinserv.apk"
           download
+          aria-label="Get it on Google Play"
           style={{
             display: "inline-flex",
             alignItems: "center",
-            gap: 8,
-            background: "linear-gradient(90deg, #d4a65a 0%, #b8842f 100%)",
-            color: "#0b1a33",
-            fontWeight: 600,
-            borderRadius: 8,
-            padding: "8px 18px",
-            fontSize: 16,
             textDecoration: "none",
-            boxShadow: "0 2px 8px rgba(212, 166, 90, 0.15)",
-            transition: "background 0.3s, color 0.3s",
           }}
         >
-          <PlayStoreIcon size={24} />
-          <span>Download the App</span>
+          <PlayStoreBadge height={42} />
         </a>
         <Link href="/">Home</Link>
 

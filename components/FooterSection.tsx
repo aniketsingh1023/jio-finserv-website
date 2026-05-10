@@ -3,7 +3,7 @@
 import styles from "./FooterSection.module.css";
 import { MapPin, Phone, Mail } from "lucide-react";
 import Link from "next/link";
-import { PlayStoreIcon } from "./PlayStoreIcon";
+import { PlayStoreBadge } from "./PlayStoreBadge";
 
 export default function FooterSection() {
   return (
@@ -13,7 +13,7 @@ export default function FooterSection() {
         <div className={`${styles.column} ${styles.glass}`}>
           <div className={styles.logo}>F</div>
           <p className={styles.description}>
-            Finserve is a trusted financial partner offering various loan
+            Jio Finserv is a trusted financial partner offering various loan
             products with competitive interest rates starting from 8.50% p.a.
             and flexible repayment options.
           </p>
@@ -85,7 +85,7 @@ export default function FooterSection() {
 
           <div className={styles.contactItem}>
             <Mail size={18} />
-            <span>care@finserve.com</span>
+            <span>care@jiofinserv.com</span>
           </div>
         </div>
       </div>
@@ -93,7 +93,7 @@ export default function FooterSection() {
       <div className={styles.divider}></div>
 
       <div className={styles.bottomRow}>
-        <p>© {new Date().getFullYear()} Finserve. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Jio Finserv. All rights reserved.</p>
 
         <div className={styles.bottomLinks}>
           <Link href="terms-conditions">Terms & Conditions</Link>
@@ -101,18 +101,18 @@ export default function FooterSection() {
         </div>
 
         <a
-          href="/apk/apk-v3.apk"
+          href="/apk/JioFinserv.apk"
           download
+          aria-label="Get it on Google Play"
           className={styles.downloadAppBtn}
           style={{
             display: "inline-flex",
             alignItems: "center",
-            gap: 8,
             marginLeft: 16,
+            textDecoration: "none",
           }}
         >
-          <PlayStoreIcon size={28} />
-          <span>Download the App Now</span>
+          <PlayStoreBadge height={48} />
         </a>
       </div>
     </footer>

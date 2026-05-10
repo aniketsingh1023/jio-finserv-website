@@ -212,7 +212,7 @@ export default function ContactUserTemplate({ fullName, message }: Props) {
                   borderTop: "1px solid #eee",
                 }}
               >
-                © {new Date().getFullYear()} Finserv NBFC  
+                © {new Date().getFullYear()} Jio Finserv NBFC
                 <br />
                 Excellence in Financial Solutions
               </td>

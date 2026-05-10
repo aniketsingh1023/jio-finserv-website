@@ -7,8 +7,8 @@ import { getUser } from "@/lib/getUser";
 import { UserRegistrationDto } from "@/types/userRegistration";
 
 export const metadata = {
-  title: "FinServe",
-  description: "Financial Service Platform",
+  title: "Jio Finserv",
+  description: "Jio Finserv - Financial Service Platform",
 };
 
 export default async function RootLayout({

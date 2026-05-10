@@ -9,7 +9,7 @@ export default function AboutUsPage() {
   return (
     <>
       <SubPageComponent
-        title="About Finserv Limited"
+        title="About Jio Finserv Limited"
         subTitle=""
         description="Your trusted partner in financial growth, committed to making your dreams a reality through accessible and affordable financial solutions."
         buttonText="Apply Now"
